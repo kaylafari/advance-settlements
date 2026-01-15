@@ -5,7 +5,6 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { useKV } from "@github/spark/hooks"
 import { PaperPlaneRight, CheckCircle } from "@phosphor-icons/react"
 import { motion, AnimatePresence } from "framer-motion"
 import { toast } from "sonner"
@@ -22,7 +21,7 @@ interface FormData {
 }
 
 export function ContactFormSection() {
-  const [submissions, setSubmissions] = useKV<FormData[]>("form-submissions", [])
+  const [submissions, setSubmissions] = useState<FormData[]>([])
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [formData, setFormData] = useState<FormData>({
     firstName: "",
@@ -38,7 +37,7 @@ export function ContactFormSection() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     
-    setSubmissions((current) => [...(current || []), { ...formData }])
+    setSubmissions((current) => [...current, { ...formData }])
     
     setIsSubmitted(true)
     toast.success("Application submitted successfully! We'll be in touch soon.")
