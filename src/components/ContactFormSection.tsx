@@ -13,7 +13,6 @@ interface FormData {
   firstName: string
   lastName: string
   email: string
-  phone: string
   settlementType: string
   estimatedAmount: string
   timeline: string
@@ -27,7 +26,6 @@ export function ContactFormSection() {
     firstName: "",
     lastName: "",
     email: "",
-    phone: "",
     settlementType: "",
     estimatedAmount: "",
     timeline: "",
@@ -48,7 +46,6 @@ export function ContactFormSection() {
         firstName: "",
         lastName: "",
         email: "",
-        phone: "",
         settlementType: "",
         estimatedAmount: "",
         timeline: "",
@@ -62,7 +59,7 @@ export function ContactFormSection() {
   }
 
   const isFormValid = formData.firstName && formData.lastName && formData.email && 
-                      formData.phone && formData.settlementType && formData.timeline
+                      formData.settlementType && formData.timeline
 
   return (
     <section id="contact-form" className="bg-gradient-to-br from-primary/5 to-secondary/5 py-16 md:py-24">
@@ -117,30 +114,16 @@ export function ContactFormSection() {
                   </div>
                 </div>
 
-                <div className="grid gap-6 md:grid-cols-2">
-                  <div className="space-y-2">
-                    <Label htmlFor="email">Email Address *</Label>
-                    <Input
-                      id="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={(e) => handleChange("email", e.target.value)}
-                      placeholder="john.doe@example.com"
-                      required
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="phone">Phone Number *</Label>
-                    <Input
-                      id="phone"
-                      type="tel"
-                      value={formData.phone}
-                      onChange={(e) => handleChange("phone", e.target.value)}
-                      placeholder="(555) 123-4567"
-                      required
-                    />
-                  </div>
+                <div className="space-y-2">
+                  <Label htmlFor="email">Email Address *</Label>
+                  <Input
+                    id="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={(e) => handleChange("email", e.target.value)}
+                    placeholder="john.doe@example.com"
+                    required
+                  />
                 </div>
 
                 <div className="grid gap-6 md:grid-cols-2">
