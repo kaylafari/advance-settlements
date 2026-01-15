@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container mx-auto max-w-7xl px-4 py-12 md:px-8 md:py-16">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <h3 className="mb-4 text-xl font-semibold">Advance Settlements</h3>
+            <h3 className="mb-4 text-xl font-semibold">Advance Settlement Group</h3>
             <p className="text-sm text-primary-foreground/80 leading-relaxed">
               Connecting settlement funders with fundees to help you find the best deal 
               based on your timeline and needs.
@@ -80,7 +80,7 @@ export function Footer() {
         <Separator className="my-8 bg-primary-foreground/20" />
 
         <div className="flex flex-col items-center justify-between gap-4 text-sm text-primary-foreground/60 md:flex-row">
-          <p>© 2024 Advance Settlements. All rights reserved.</p>
+          <p>© 2024 Advance Settlement Group. All rights reserved.</p>
           <p className="text-xs">
             Settlement advances are subject to approval and terms. Rates and fees vary by funder.
           </p>

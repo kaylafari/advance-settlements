@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export function HeroSection({ onCtaClick }: { onCtaClick: () => void }) {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-secondary py-24 md:py-32">
+    <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-secondary pt-32 pb-24 md:pt-40 md:pb-32">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.1),transparent_50%)]" />
       
       <div className="container relative mx-auto max-w-7xl px-4 md:px-8">
@@ -31,7 +31,7 @@ export function HeroSection({ onCtaClick }: { onCtaClick: () => void }) {
             className="mb-8 text-lg text-primary-foreground/90 md:text-xl"
             style={{ lineHeight: '1.6' }}
           >
-            Advance Settlements connects you with multiple funders, letting you shop the market 
+            Advance Settlement Group connects you with multiple funders, letting you shop the market 
             for the best rates and terms based on your timeline. Fast, transparent, and designed 
             to help you make the right choice.
           </motion.p>

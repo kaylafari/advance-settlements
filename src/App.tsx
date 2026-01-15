@@ -1,3 +1,4 @@
+import { Header } from "@/components/Header"
 import { HeroSection } from "@/components/HeroSection"
 import { HowItWorksSection } from "@/components/HowItWorksSection"
 import { BenefitsSection } from "@/components/BenefitsSection"
@@ -18,6 +19,7 @@ function App() {
   return (
     <div className="min-h-screen">
       <Toaster />
+      <Header onGetStartedClick={scrollToForm} />
       <HeroSection onCtaClick={scrollToForm} />
       <StatsSection />
       <HowItWorksSection />

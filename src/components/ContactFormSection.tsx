@@ -221,7 +221,7 @@ export function ContactFormSection() {
                   Application Submitted!
                 </h3>
                 <p className="mb-6 max-w-md text-muted-foreground">
-                  Thank you for choosing Advance Settlements. We're connecting you with our network 
+                  Thank you for choosing Advance Settlement Group. We're connecting you with our network 
                   of funders and you'll hear from us within 24 hours.
                 </p>
                 <div className="text-sm text-muted-foreground">

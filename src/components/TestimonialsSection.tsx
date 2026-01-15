@@ -12,7 +12,7 @@ const testimonials = [
   {
     name: "James T.",
     role: "Workers Compensation Settlement",
-    content: "Advance Settlements helped me find funding options I didn't even know existed. The rates were significantly better than what I was originally quoted elsewhere.",
+    content: "Advance Settlement Group helped me find funding options I didn't even know existed. The rates were significantly better than what I was originally quoted elsewhere.",
     rating: 5
   },
   {

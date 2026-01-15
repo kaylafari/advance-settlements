@@ -48,7 +48,7 @@ export function BenefitsSection() {
           className="mb-12 text-center"
         >
           <Badge className="mb-4 bg-accent/10 text-accent hover:bg-accent/20 border-accent/20">
-            Why Choose Advance Settlements
+            Why Choose Advance Settlement Group
           </Badge>
           <h2 className="mb-4 text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
             Advantages That Matter
